@@ -173,7 +173,7 @@ const Hero = () => {
                 {currentStage === 'pinEntry' ? (
                     <div ref={stage1Ref} className="w-full max-w-4xl mx-auto flex flex-col items-center text-center px-4">
                         <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900"> Screen Sharing, Unplugged. Darpan for Screens. </h1>
-                        <p className="mt-4 text-lg md:text-xl text-slate-600 max-w-2xl"> An ultra-light, peer-to-peer screen sharing tool for the real world. Instant, offline, and incredibly efficient. </p>
+                        <p className="mt-4 text-lg md:text-xl text-slate-600 max-w-xl"> An ultra-light, peer-to-peer screen sharing tool for the real world. Instant, offline, and incredibly efficient. </p>
                         <div className="mt-16 w-full flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
                             <div className="pin-entry-device">
                                 <p className="font-semibold text-slate-500 text-sm mb-3">HOST PIN</p>

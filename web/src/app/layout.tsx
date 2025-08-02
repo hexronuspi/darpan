@@ -17,9 +17,9 @@ export const metadata: Metadata = {
   title: "Darpan",
   description: "A high-performance screen-sharing app over Bluetooth",
   icons: {
-    icon: "/icon.ico",                 
-    shortcut: "/icon.ico",           
-    apple: "/icon.ico",                   
+    icon: "/darpan/icon.ico",                 
+    shortcut: "/darpan/icon.ico",           
+    apple: "/darpan/icon.ico",                   
   },
   appleWebApp: {
     title: "Darpan",

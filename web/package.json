@@ -1,12 +1,14 @@
 {
-  "name": "darpanweb",
+  "name": "darpan",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "next build && touch out/.nojekyll"
   },
   "dependencies": {
     "gsap": "^3.13.0",
