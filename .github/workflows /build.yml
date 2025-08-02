@@ -2,11 +2,15 @@ name: Build Next.js Static Site
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
+    paths:
+      - 'web/**'
+      - '.github/workflows/**'
   pull_request:
-    branches:
-      - main
+    branches: [main]
+    paths:
+      - 'web/**'
+      - '.github/workflows/**'
 
 jobs:
   build:
