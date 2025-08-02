@@ -1,2 +1,2 @@
 # darpan
-A high-performance screen-sharing app over Bluetooth.
+A high-performance local screen-sharing app.
