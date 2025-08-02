@@ -1,17 +1,8 @@
 name: 🚀 Deploy to GitHub Pages
 
 on:
-  workflow_dispatch:
   push:
     branches: [main]
-    paths:
-      - 'web/**'
-      - '.github/workflows/**'
-  pull_request:
-    branches: [main]
-    paths:
-      - 'web/**'
-      - '.github/workflows/**'
 
 jobs:
   deploy:
