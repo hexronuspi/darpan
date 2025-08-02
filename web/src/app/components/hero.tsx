@@ -1,4 +1,4 @@
-"use client";
+ "use client";
 
 import React, { useState, useEffect, useRef, useMemo, memo, Suspense, lazy } from 'react';
 import { gsap } from 'gsap';
@@ -66,8 +66,8 @@ const FeaturesDisplay = () => {
   FeaturePod.displayName = "FeaturePod";
 
   return (
-    <div ref={containerRef} className="w-full flex flex-col items-center justify-center gap-16 px-4">
-        <div className="laptops-container relative w-full max-w-lg h-48 flex justify-center items-center">
+    <div ref={containerRef} className="w-full h-full flex flex-col items-center justify-evenly gap-y-4 px-4">
+        <div className="laptops-container relative w-full max-w-lg h-40 md:h-48 flex justify-center items-center">
              <div className="laptop-mockup absolute left-0"> <div className="screen flex items-center justify-center"> <svg fill="#475569" width="80px" height="80px" viewBox="0 0 32.00 32.00" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M16 15.503A5.041 5.041 0 1 0 16 5.42a5.041 5.041 0 0 0 0 10.083zm0 2.215c-6.703 0-11 3.699-11 5.5v3.363h22v-3.363c0-2.178-4.068-5.5-11-5.5z"></path></g></svg> </div> </div>
             <div className="laptop-mockup absolute right-0"> <div className="screen flex items-center justify-center"> <div className="client-screen-content opacity-0 w-full h-full flex items-center justify-center"> <svg fill="#475569" width="80px" height="80px" viewBox="0 0 32.00 32.00" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M16 15.503A5.041 5.041 0 1 0 16 5.42a5.041 5.041 0 0 0 0 10.083zm0 2.215c-6.703 0-11 3.699-11 5.5v3.363h22v-3.363c0-2.178-4.068-5.5-11-5.5z"></path></g></svg> </div> </div> </div>
             <svg className="absolute w-full h-full overflow-visible" viewBox="0 0 200 100">
@@ -75,7 +75,7 @@ const FeaturesDisplay = () => {
                 <defs> <linearGradient id="stream-gradient" gradientTransform="rotate(90)"> <stop offset="0%" stopColor="#3b82f6" /> <stop offset="100%" stopColor="#f97316" /> </linearGradient> </defs>
             </svg>
         </div>
-        <div className="w-full max-w-6xl flex flex-wrap justify-center items-start gap-x-12 gap-y-10"> {features.map(f => <FeaturePod key={f.title} {...f} />)} </div>
+        <div className="w-full max-w-4xl flex flex-wrap justify-center items-start gap-x-8 md:gap-x-12 gap-y-6 md:gap-y-8"> {features.map(f => <FeaturePod key={f.title} {...f} />)} </div>
     </div>
   );
 };

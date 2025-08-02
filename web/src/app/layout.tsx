@@ -16,6 +16,17 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Darpan",
   description: "A high-performance screen-sharing app over Bluetooth",
+  icons: {
+    icon: "/icon.ico",                 
+    shortcut: "/icon.ico",           
+    apple: "/icon.ico",                   
+  },
+  appleWebApp: {
+    title: "Darpan",
+    statusBarStyle: "default",
+    capable: true,
+  },
+  manifest: "/site.webmanifest",         
 };
 
 export default function RootLayout({
