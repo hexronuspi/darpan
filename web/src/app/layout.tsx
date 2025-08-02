@@ -19,14 +19,7 @@ export const metadata: Metadata = {
   icons: {
     icon: "/darpan/icon.ico",                 
     shortcut: "/darpan/icon.ico",           
-    apple: "/darpan/icon.ico",                   
-  },
-  appleWebApp: {
-    title: "Darpan",
-    statusBarStyle: "default",
-    capable: true,
-  },
-  manifest: "/site.webmanifest",         
+  }         
 };
 
 export default function RootLayout({
